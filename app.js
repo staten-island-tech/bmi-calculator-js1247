@@ -22,6 +22,20 @@ test(z);
 function add(x, y) {
     console.log(x + y);
 }
-let a = prompt("enter a number");
-let b = prompt("enter another number");
+//need to convert the string to a number
+let a = number(prompt("enter a number"));
+let b = number(prompt("enter another number"));
 add(a, b);
+
+function add(x,y) {
+    //creates an output
+    return x + y;
+}
+const sum = add(45, 42)
+
+
+function calc() {
+    const sum = add(45, 34);
+    console.log(sum);
+}
+calc();
