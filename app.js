@@ -4,6 +4,7 @@ function checkBMI(height, weight){
 const username = prompt("Enter your Name");
 const weight = prompt("Enter your weight in kg");
 const height = prompt("Enter your height in cm");
+const bmi = checkBMI(height, weight)
 
 function BMI (checkBMI){
     if(checkBMI < 18.5){
@@ -20,7 +21,5 @@ function BMI (checkBMI){
     }
 }
 
-const bmi = checkBMI(height, weight)
-console.log(username);
-console.log("BMI= " + bmi);
-console.log(" " + BMI(bmi));
+console.log(username + " " + "your" + " " + "BMI = " + bmi + " " + "is" + " " + BMI());
+
